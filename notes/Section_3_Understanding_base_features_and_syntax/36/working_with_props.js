@@ -1,0 +1,5 @@
+/*
+    components use props just like some attributes
+
+    props can be passed to the component
+*/
