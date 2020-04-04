@@ -3,7 +3,11 @@ import React from "react";
 const InputField = (props) => {
   return (
     <div>
-      <input type="text" onChange={props.change} />
+      <input
+        value={props.valueField.join("")}
+        onChange={props.inputChars}
+        type="text"
+      />
       <p id="output"></p>
     </div>
   );

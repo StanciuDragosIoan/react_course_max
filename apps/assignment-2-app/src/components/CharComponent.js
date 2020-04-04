@@ -1,19 +1,18 @@
 import React from "react";
 
-const CharComponent = (props) => {
+export default function CharComponent(props) {
   const style = {
     display: "inline-block",
     background: "#333",
+    width: "1.5rem",
+    margin: "1rem",
+    border: "1px solid #000",
     color: "#fff",
-    border: "2px solid #000",
-    padding: "1px",
-    margin: "5px",
+    padding: "5px",
   };
   return (
-    <div style={style} onClick={props.click}>
-      {props.char}
+    <div onClick={props.clickHandler} style={style}>
+      {props.value}
     </div>
   );
-};
-
-export default CharComponent;
+}

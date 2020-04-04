@@ -1,50 +1,40 @@
 import React, { Component } from "react";
 import "./App.css";
 import InputField from "./components/InputField";
-import ValidationComponent from "./components/ValidationComponent";
+import Validation from "./components/Validation";
 import CharComponent from "./components/CharComponent";
-
 class App extends Component {
   state = {
     charsArray: [],
-    fieldValue: "",
   };
 
-  changeValueHandler = (e) => {
-    let input = e.target.value;
-    document.querySelector("#output").innerHTML = input;
+  inputCharsHandler = (e) => {
+    let inputValue = e.target.value;
+    document.querySelector("#output").innerText = inputValue;
 
-    const inputArray = [...input];
-    // const inputToPutInState = inputArray.join();
+    let newArray = [...inputValue];
+    this.setState({
+      charsArray: newArray,
+    });
+  };
+
+  handleClick = (itemToLog, index) => {
+    const initialAr = [...this.state.charsArray];
+
+    let output = [];
+
+    initialAr.forEach((item, index2) => {
+      if (index2 !== index) {
+        output.push(item);
+      }
+    });
 
     this.setState({
-      charsArray: inputArray,
+      charsArray: output,
     });
+
+    document.querySelector("#output").innerText = output.join("");
   };
-
-  // getInputValue = () => {
-  //   let actualValue = this.state.charsArray.join();
-  //   console.log(actualValue);
-  // };
-
-  removeChar = (key) => {
-    const formInput = [...this.state.charsArray];
-    formInput.splice(key, 1);
-
-    let newValue = "";
-
-    formInput.forEach((item) => {
-      newValue += item;
-    });
-    console.log(newValue);
-
-    this.setState({
-      charsArray: formInput,
-    });
-
-    console.log(this.state);
-  };
-
   render() {
     return (
       <div className="App">
@@ -83,14 +73,15 @@ class App extends Component {
         </p>
 
         <InputField
-          value={this.state.originalInputValue}
-          change={this.changeValueHandler}
+          valueField={this.state.charsArray}
+          inputChars={this.inputCharsHandler}
         />
-        <ValidationComponent textLength={this.state.charsArray.length} />
+        <Validation checkLength={this.state.charsArray} />
+
         {this.state.charsArray.map((item, index) => (
           <CharComponent
-            click={() => this.removeChar(index)}
-            char={item}
+            clickHandler={() => this.handleClick(item, index)}
+            value={item}
             key={index}
           />
         ))}
