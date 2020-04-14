@@ -8,7 +8,9 @@
 console.log(a); //Hello
 console.log(b); //Max
 
-{name } = {name: "Max", age: 25};
+{ name } = {name: "Max", age:"25"};
+
 console.log(name);//Max
-console.log(age); //undefined
+// console.log(age); //undefined
+
 */

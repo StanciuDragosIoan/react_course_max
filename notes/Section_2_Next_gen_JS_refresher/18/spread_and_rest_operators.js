@@ -1,7 +1,7 @@
 //spread and rest operator
 
 /*
-//spread (splits an array or object properties)
+//spread (splits an array or object properties into sub-arrays or sub-objects)
 const oldArray = [5, 6, 7, 8, 9];
 const newArray = [...oldArray, 2, 3];
 
@@ -19,7 +19,7 @@ const newObj = {
 */
 
 /*
-//rest operator (used to merge a list of function arguments into an array)
+//rest operator (used to merge a list of function arguments into an array or object)
 function sortArgs(...args) {
   console.log(args.sort());
 }
@@ -47,7 +47,7 @@ const newPerson = {
 
 console.log(newPerson);
 
-*/
+
 
 //REST
 const filter = (...args) => {
@@ -56,3 +56,4 @@ const filter = (...args) => {
 };
 
 filter(1, 5, 1, 3, 2, -10, 22, -90);
+*/
