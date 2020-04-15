@@ -16,5 +16,5 @@
   }
 
 
-  //instead of that we can extend a PureComponent which bby default checks all the props of the component and 
+  //instead of that we can extend a PureComponent which by default checks all the props of the component and 
   //if none of them change at all, it does NOT re-render the component (and this is the default behaviour of a PureComponent)
