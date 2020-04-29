@@ -28,6 +28,9 @@ const book2 = {
   ...book1
 };
 
+ 
+
+
 book1.title = 'test';
 
 console.log(book2); //title is not changed because we copied the actual object

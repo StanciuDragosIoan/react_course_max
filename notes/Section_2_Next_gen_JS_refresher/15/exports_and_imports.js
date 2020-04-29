@@ -35,4 +35,4 @@ import prs from './person'; //default export (can be imported with diff name)
 
 import { smth } from './utility.js'; //import named export by its name
 import { smth as Smth } from './utility.js'; //import named export by its name but set an alias for it
-imrt { bundled } from './utiltiy.js'; //import everything as a global object
+import { bundled } from './utiltiy.js'; //import everything as a global object

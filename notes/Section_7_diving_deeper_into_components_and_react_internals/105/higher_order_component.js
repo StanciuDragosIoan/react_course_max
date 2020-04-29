@@ -1,0 +1,7 @@
+/*
+    a higher order component can be a div that contains a class based component
+
+    they are components that wrap around other components and add stuff to them 
+
+        e.g. an error handler component that we wrap around components that make http requests
+*/

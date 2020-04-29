@@ -1,10 +1,10 @@
 //spread and rest operator
 
-/*
+
 //spread (splits an array or object properties into sub-arrays or sub-objects)
 const oldArray = [5, 6, 7, 8, 9];
 const newArray = [...oldArray, 2, 3];
-
+/*
 const oldObj = {
   oldProp: 'test',
   oldProp2: 'test2',
@@ -15,8 +15,8 @@ const newObj = {
   ...oldObj,
   newProp: '5' //note how this overwrites the newProp property in oldObj;
 };
-// console.log(newObj);
-*/
+  console.log(newObj);
+ */
 
 /*
 //rest operator (used to merge a list of function arguments into an array or object)

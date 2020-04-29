@@ -1,13 +1,8 @@
 /*
 
-    ## Review number: 1,
-
-    Covered: videos 1-15
-
-    Date: 1/4/2020
+    ## Review number: 1, (date start april 29 2020)
+    
+    covered videos: Sections 1 and 2;
 
 
-    Date: 12/4/2020
-
-    Covered: 16-21
 */
