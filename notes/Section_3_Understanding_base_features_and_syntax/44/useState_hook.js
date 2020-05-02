@@ -8,7 +8,7 @@
     the function that updates the state actually creates a copy of it and replaces
     the old state with it (so we need to manually make sure we include all old state
     data when updating it)
-        *or we could call useState() multiple times (manipulating multiple chinks of state)
+        *or we could call useState() multiple times (manipulating multiple chunks of state)
 
     in a class based component state is a property and setState merges changes with
     the old state

@@ -29,7 +29,7 @@
                     *necessary for React dependencies, build tool (JS compiler)
 
                 we need a bundler (webpack)
-                    we want to run code that is well bundles (but the code is split in fewer
+                    we want to run code that is well bundled (but the code is split in fewer
                     files when shipped to prod)
 
                 we need a compiler (Babel + pre-sets)
