@@ -1,0 +1,7 @@
+/*
+     initialized context and wrapped Cockpit and Persons components in it
+
+     useContext for func components
+
+     static contextType is for class based components
+*/

@@ -15,6 +15,9 @@
 
 
 
+    
+    May 3 2020
 
+    covered videos:  44-47
 
 */
