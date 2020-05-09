@@ -1,3 +1,10 @@
+/*
+    created the Burger component and the BurgerIngredient
+
+*/
+
+
+
 //a functional component looks like this:
 
 import React from "react";
