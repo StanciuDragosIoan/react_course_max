@@ -1,0 +1,4 @@
+/*
+
+    added a checkout component inside the build controls
+*/
