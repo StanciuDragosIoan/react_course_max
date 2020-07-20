@@ -21,9 +21,10 @@ const App = (props) => {
           age: 25,
         },
       ],
-      name: "Some name..",
     },
   );
+
+  const [otherState, setOtherState] = useState("Some name..");
 
   const switchNameHandler = () => {
     console.log("Btn clicked and event triggered");
