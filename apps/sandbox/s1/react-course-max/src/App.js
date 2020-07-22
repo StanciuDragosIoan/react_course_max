@@ -69,10 +69,18 @@ const App = (props) => {
     });
   };
 
+  const style = {
+    backgroundColor: "red",
+    font: "inherit",
+    border: "1px solid blue",
+    padding: "8px",
+    cursor: "pointer",
+  };
+
   return (
     <div className="App">
       <h1>Hi, I am a react app</h1>
-      <button onClick={() => switchNameHandler("TEST_NAME2")}>
+      <button style={style} onClick={() => switchNameHandler("TEST_NAME2")}>
         Switch Names
       </button>
       <Person
